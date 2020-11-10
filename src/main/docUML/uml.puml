@@ -1,0 +1,42 @@
+@startuml
+package distributeur {
+    class Client{}
+    interface MachineEtat{
+        + give(MachineEtat m, int n) : void
+        + askCoffee(MachineEtat m) : void
+        + askTee(MachineEtat m) : void
+    }
+
+    class Distributeur {
+        - somme : int
+        - State : DistributeurState
+        ~ caisse() : integer
+        ~ ajouterCaisse() : integer
+        ~ diminuerCaisse() : void
+        ~ reinitialisation() : void
+        ~ setState() : void
+        ~ give(integer n,i) : void
+        ~ askCoffee() : void
+        ~ askTee() : void
+        ~ getRefund() : void
+
+    }
+
+    class DistributeurValide implements DistributeurState{
+        - {static} instance
+        + getInstance() : DistributeurState
+        + give(DistributeurState a, int i) : void
+        + askCoffee(DistributeurState a) : void
+        + askTee(DistributeurState a) : void
+    }
+
+    class DistributeurInvalide implements DistributeurState{
+        - {static} instance
+        + getInstance() : DistributeurState
+        + give(DistributeurState a, int i) : void
+        + askCoffee(DistributeurState a) : void
+        + askTee(DistributeurState a) : void
+    }
+}
+
+@enduml
