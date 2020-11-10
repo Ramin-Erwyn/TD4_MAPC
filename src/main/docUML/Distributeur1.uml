@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Distributeur1</OriginalElement>
+  <nodes>
+    <node x="229.0" y="148.0">Distributeur1.DistributeurInvalide</node>
+    <node x="0.0" y="381.0">Distributeur1.Distributeur</node>
+    <node x="120.5" y="0.0">Distributeur1.DistributeurState</node>
+    <node x="0.0" y="159.0">Distributeur1.DistributeurValide</node>
+    <node x="259.0" y="381.0">Distributeur1.App</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Distributeur1.DistributeurValide" target="Distributeur1.DistributeurState">
+      <point x="0.0" y="-83.0" />
+      <point x="104.5" y="123.0" />
+      <point x="169.75" y="123.0" />
+      <point x="-49.25" y="49.0" />
+    </edge>
+    <edge source="Distributeur1.DistributeurInvalide" target="Distributeur1.DistributeurState">
+      <point x="0.0" y="-94.0" />
+      <point x="333.5" y="123.0" />
+      <point x="268.25" y="123.0" />
+      <point x="49.25" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4519650655021834" x="219.0" y="317.5" />
+  <SelectedNodes>
+    <node>Distributeur1.DistributeurValide</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
