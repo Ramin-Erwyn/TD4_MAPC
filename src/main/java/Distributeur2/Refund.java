@@ -25,7 +25,7 @@ public class Refund implements DistributeurState {
     public int getRefund(Distributeur a) {
         int b =a.somme();
         a.reinitialisation();
-        System.out.println(String.format("caisse = %d", a.somme()));
+        System.out.println(String.format("caisse REFUND = %d", a.somme()));
         a.setState(DistributeurInvalide.getInstance());
         return b ;
     }

@@ -10,7 +10,7 @@ public class Distributeur {
 
     public Distributeur(){
         this.somme = 0;
-        this.state = DistributeurInvalide.getInstance();
+        this.state = DistributeurValide.getInstance();
     }
 
     void setState(DistributeurState s) {
